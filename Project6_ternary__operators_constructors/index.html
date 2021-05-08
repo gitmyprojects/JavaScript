@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ternary ops</title>
+    <script src="./JS/main.js"></script>
+</head>
+<body>
+    <p>Riders must be at least 52 centimeters tall to ride.</p>
+    <input id="Height" value="52" /> <!--this takes in user input-->
+    <button onclick="Ride_Function()">Click Here</button><!--this runs the function once the input is entered-->
+    <p id="Ride"></p> <!-- this is where the getDocumentById method connection is made to display the results of the function its stored in-->
+
+    <p>Are you old enough to vote? <strong>Let's find out!</strong></p>
+    <input id="voter_age" value="Enter your age"/>
+    <button type="button" onclick="check_age()">drumroll, please...</button>
+    <br>
+    <p id="vote"></p>
+
+    <button onclick="prez_info()">Click Here</button>
+    <p id="New_and_This"></p>
+     
+    <button  onclick="nest()">x=1</button> <!--i named this x=1 to clarify the state the of x before the event is initiated-->
+    <p id="Nested_Function"></p>
+
+</body>
+</html>
