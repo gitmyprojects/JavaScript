@@ -13,14 +13,14 @@
 			</div>
 		<script type="text/javascript">
 			
-			var ajax = new XMLHttpRequest(); <!--initialze the variable
-			ajax.open('GET', 'content.html'); <!--request the 'content.html' file from the server
-			ajax.onreadystatechange = function() { <!--when the state changes, run the function-->
-				if (ajax.readyState == 4) { <!--check that the state of AJAX is 4 and if it is, run the next line
-					document.getElementById('content').innerHTML = ajax.responseText; <!--when the state is 4, display 'content'
+			var ajax = new XMLHttpRequest(); //initialze the variable
+			ajax.open('GET', 'content.html'); //request the 'content.html' file from the server
+			ajax.onreadystatechange = function() { //--when the state changes, run the function-->
+				if (ajax.readyState == 4) { //check that the state of AJAX is 4 and if it is, run the next line
+					document.getElementById('content').innerHTML = ajax.responseText; //when the state is 4, display 'content'
 					}
 				}
-			function getContent() { <!--function that will prevent the buttin from being displayed once it is pressed>
+			function getContent() { //--function that will prevent the buttin from being displayed once it is pressed>
 				ajax.send();
 				document.getElementById('btn_content').style.display = 'none';
 			}
